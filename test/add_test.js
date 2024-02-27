@@ -20,4 +20,16 @@ describe('+', () => {
     assert.deepEqual(sum, expected);
   });
 
+  it('returns the sum of two array values', () => {
+    // Setup
+		let expected = [3, 4, 7];
+		let sum = [3, 4];
+
+    // Exercise
+		sum.push(sum[0] + sum[1]);
+
+    // Verify
+    assert.deepEqual(sum, expected);
+  });
+
 });
