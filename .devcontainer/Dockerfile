@@ -12,6 +12,8 @@ WORKDIR /usr/app
 # Update the system and install necessary packages
 RUN apt-get update && \
     apt-get upgrade -y && \
+    # Install git for version control
+    apt-get install -y git && \
     # This command updates the package lists for the APT (Advanced Package Tool) package manager. 
     # It fetches the latest information about available packages from the configured repositories.
     apt-get clean && \
