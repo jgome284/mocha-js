@@ -1,4 +1,10 @@
-// import assert here
+/* 
+import assert 
+Check for loose (==) equality with assert.equal()
+Check for strict (===) equality with assert.strictEqual()
+Check the equality of two object’s values with assert.deepEqual()
+*/
+
 const assert = require('assert')
 
 describe('+', () => {
