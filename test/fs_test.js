@@ -12,10 +12,21 @@ This provides two key benefits:
 */
 
 describe('appendFileSync', () => {
+  // add test hooks for setup and teardown
+
+  before(() => {
+    // Setup
+    path = './message.txt'
+  });
+
+  afterEach(() => {
+    // Teardown: restore file
+    fs.unlinkSync(path);
+  })
+
   it('creates a new file with a string of text', () => {
  
    // Setup
-   path = './message.txt';
    str = 'Hello Node.js';
   
    // Exercise: write to file
@@ -24,16 +35,12 @@ describe('appendFileSync', () => {
    // Verify: compare file contents to string
    const contents = fs.readFileSync(path);
    assert.equal(contents.toString(), str);
- 
-   // Teardown: restore file
-   fs.unlinkSync(path);
 
  });
  
  it('creates a new file with a string of text', () => {
  
    // Setup
-   path = './message.txt';
    str = '';
   
    // Exercise: write to file
@@ -42,9 +49,6 @@ describe('appendFileSync', () => {
    // Verify: compare file contents to string
    const contents = fs.readFileSync(path);
    assert.equal(contents.toString(), str);
- 
-   // Teardown: restore file
-   fs.unlinkSync(path);
 
  });
 });
