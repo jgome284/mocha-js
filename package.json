@@ -1,0 +1,19 @@
+{
+  "name": "mocha-js",
+  "version": "1.0.0",
+  "description": "Demoing JavaScript testing with Mocha.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jgome284/mocha-js.git"
+  },
+  "author": "Jose M. Gomez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jgome284/mocha-js/issues"
+  },
+  "homepage": "https://github.com/jgome284/mocha-js#readme"
+}
