@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/jgome284/mocha-js/issues"
   },
-  "homepage": "https://github.com/jgome284/mocha-js#readme"
+  "homepage": "https://github.com/jgome284/mocha-js#readme",
+  "devDependencies": {
+    "mocha": "^10.3.0"
+  }
 }
