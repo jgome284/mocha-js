@@ -4,6 +4,7 @@
 # If you need more help, visit the Dockerfile reference guide at
 # https://docs.docker.com/engine/reference/builder/
 
+# Debian GNU/Linux 12 (bookworm) with Node
 FROM node:lts-bookworm as development
 
 # Set the working directory in the container
