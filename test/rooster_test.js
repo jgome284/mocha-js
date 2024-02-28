@@ -1,6 +1,6 @@
 // import modules
 const assert = require('assert')
-const Rooster = require('../rooster')
+const Rooster = require('../src/rooster.js')
 
 describe('Rooster', () => {
 

@@ -1,5 +1,5 @@
 var assert = require("assert");
-var Calculate =  require('../factorial.js')
+var Calculate =  require('../src/factorial.js')
 
 describe('Calculate', () => {
   describe('.factorial', () => {

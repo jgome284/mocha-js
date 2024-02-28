@@ -1,5 +1,5 @@
 const assert = require('assert');
-const Calculate =  require('../sum.js')
+const Calculate =  require('../src/sum.js')
 
 describe('Calculate', () => {
   describe('.sum',() => {
